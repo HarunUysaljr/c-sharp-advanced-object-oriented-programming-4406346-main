@@ -11,3 +11,10 @@ Console.WriteLine(rect2.GetArea());
 
 
 // TODO: Try setting an invalid value
+rect1.borderSize=5;
+
+
+System.Console.WriteLine($"{rect1.borderSize}");
+rect1.Height=-5;
+rect1.Width=6;
+System.Console.WriteLine($"{rect1.GetArea()}");
