@@ -47,8 +47,7 @@ class Rectangle {
 
     // Properties and member variables hold data
 
-
     int width;
     int height;
-
 }
+
