@@ -12,7 +12,9 @@ Console.WriteLine($"{r}");
 
 // Use the "is" operator to test an object type
 Console.WriteLine($"{c is Shape2D}");
+#pragma warning disable CS0184 // 'is' ifadesinin verilen ifadesi sağlanan türden değil
 Console.WriteLine($"{c is Rectangle}");
+#pragma warning restore CS0184 // 'is' ifadesinin verilen ifadesi sağlanan türden değil
 
 // Call the GetArea() function on each one
 Console.WriteLine(c.GetArea());
