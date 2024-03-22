@@ -6,8 +6,8 @@ Circle c = new Circle(10);
 Rectangle r = new Rectangle(10,20);
 
 // TODO: Exercise the ToString() method
-
-
+System.Console.WriteLine($"{c}");
+System.Console.WriteLine($"{r}");
 // TODO: Use the "is" operator to test an object type
 
 
@@ -18,4 +18,5 @@ Rectangle r = new Rectangle(10,20);
 
 
 // TODO: All of the classes derive from Shape2D, so we can treat each one
+
 // as an instance of the base class. 

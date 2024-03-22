@@ -11,6 +11,8 @@ class Shape2D {
     // TODO: All classes in .NET derive from Object, so we get some methods for free
     // ToString() returns a string representation of the object
     // GetType() returns the type of the object
+
+    public override string ToString() => $"This object is a '{GetType()}'";
 }
 
 // Derive a Circle class that inherits from the base Shape2D
