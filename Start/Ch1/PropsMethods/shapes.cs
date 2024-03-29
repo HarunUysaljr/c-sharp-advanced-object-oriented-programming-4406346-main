@@ -51,3 +51,15 @@ class Rectangle {
     int height;
 }
 
+class Araba{
+    private string? marka;
+
+    public string Marka{
+        get{
+            return marka;
+        }
+        set{
+            marka = value;
+        }
+    }
+}

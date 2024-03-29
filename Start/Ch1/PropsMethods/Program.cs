@@ -1,4 +1,5 @@
-﻿// Example file for Advanced C#: Object Oriented Programming by Joe Marini
+﻿/*
+// Example file for Advanced C#: Object Oriented Programming by Joe Marini
 
 // Create some rectangle objects
 Rectangle rect1 = new Rectangle(10,20);
@@ -33,3 +34,12 @@ System.Console.WriteLine("---------");
 Calculate calculate = new Calculate(5,2);
 
 System.Console.WriteLine($"{calculate.Hesapla()}");
+*/
+
+Araba araba1 = new Araba();
+
+araba1.Marka = "Toyota";
+
+String arabanınMarkası = araba1.Marka;
+
+System.Console.WriteLine($"{arabanınMarkası}");

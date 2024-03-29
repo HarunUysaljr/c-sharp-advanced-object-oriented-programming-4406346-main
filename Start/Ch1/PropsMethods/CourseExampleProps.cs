@@ -38,6 +38,8 @@ class Persons{
 class Calculate{
 
 
+
+
     public Calculate(int s1,int s2){
 
         Say1 = s1;
@@ -62,3 +64,5 @@ class Calculate{
     int say1;
     int say2;
 }
+
+
