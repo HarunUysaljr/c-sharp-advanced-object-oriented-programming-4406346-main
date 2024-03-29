@@ -63,3 +63,61 @@ class Araba{
         }
     }
 }
+
+public class Book
+{
+    private string title;
+    private string author;
+    private int pageNumber;
+
+    // Başlık özelliği
+    public string Title
+    {
+        get { return title; }
+        set { title = value; }
+    }
+
+    // Yazar özelliği
+    public string Author
+    {
+        get { return author; }
+        set { author = value; }
+    }
+
+    // Sayfa sayısı özelliği
+    public int PageNumber
+    {
+        get { return pageNumber; }
+        set { pageNumber = value; }
+    }
+
+    // Kelime sayısı hesaplayan read-only property
+    public int WordCount
+    {
+        get
+        {
+            // Basit bir kelime sayısı hesaplama: her kelime boşluk karakterinden sonra başlar
+            // ve boşluk karakteri olmadan bir sonraki boşluğa kadar devam eder
+            string[] words = title.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int count = words.Length;
+            return count;
+        }
+    }
+
+    // Ortalama kelime uzunluğu hesaplayan read-only property
+    public double AverageWordLength
+    {
+        get
+        {
+            // Tüm kelime uzunluklarının toplamını al ve kelime sayısına böl
+            string[] words = title.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int totalLength = 0;
+            foreach (string word in words)
+            {
+                totalLength += word.Length;
+            }
+            double averageLength = (double)totalLength / WordCount;
+            return averageLength;
+        }
+    }
+}

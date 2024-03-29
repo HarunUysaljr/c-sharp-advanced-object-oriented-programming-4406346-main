@@ -35,11 +35,22 @@ Calculate calculate = new Calculate(5,2);
 
 System.Console.WriteLine($"{calculate.Hesapla()}");
 */
-
+/*
 Araba araba1 = new Araba();
 
 araba1.Marka = "Toyota";
 
 String arabanınMarkası = araba1.Marka;
 
-System.Console.WriteLine($"{arabanınMarkası}");
+System.Console.WriteLine($"{arabanınMarkası}"); */
+
+Book kitap = new Book();
+kitap.Title = "Yüzüklerin efendisi";
+kitap.Author = "tolkien";
+kitap.PageNumber = 2042;
+
+
+System.Console.WriteLine($"Kitabın adı: {kitap.Title}\nKitap yazarı: {kitap.Author}\nKitap sayfası: {kitap.PageNumber}");
+
+
+System.Console.WriteLine($"Kelime sayısı : {kitap.WordCount}\nOrtalama kelime uzunluğu : {kitap.AverageWordLength}");
